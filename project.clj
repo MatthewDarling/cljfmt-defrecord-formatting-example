@@ -6,4 +6,4 @@
   :dependencies [[org.clojure/clojure "1.8.0"]]
   :plugins [[lein-cljfmt "0.5.7"]]
   :cljfmt {:indents {defcomponent [[:block 1] [:inner 1]]
-                     defrecord [[:block 1] [:inner 1]]}})
+                     s/defrecord [[:block 1] [:inner 1]]}})
