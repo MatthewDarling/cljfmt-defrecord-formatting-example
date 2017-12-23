@@ -1,4 +1,5 @@
-(ns core)
+(ns core
+  (:require [schema.cofe :as s]))
 
 (s/defrecord Complicated
              [attr1 attr2 attr3 attr4
