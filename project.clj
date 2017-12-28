@@ -7,4 +7,6 @@
   :plugins [[lein-cljfmt "0.5.8-SNAPSHOT"]]
   :cljfmt {:file-pattern #"\.clj[csx]?$"
            :indents {defcomponent [[:block 1] [:inner 1]]
-                     schema.core/defrecord [[:block 1] [:inner 1]]}})
+                     schema.core/defrecord [[:block 1] [:inner 1]]
+                     clojure.tools.reader/some-fake-macro [[:block 2]]
+                     cljs.reader/some-fake-macro [[:block 1]]}})
