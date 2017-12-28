@@ -5,5 +5,6 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]]
   :plugins [[lein-cljfmt "0.5.8-SNAPSHOT"]]
-  :cljfmt {:indents {defcomponent [[:block 1] [:inner 1]]
+  :cljfmt {:file-pattern #"\.clj[csx]?$"
+           :indents {defcomponent [[:block 1] [:inner 1]]
                      schema.core/defrecord [[:block 1] [:inner 1]]}})
